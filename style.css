@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Edu+SA+Beginner&family=Great+Vibes&family=Marcellus&family=Playfair+Display:wght@600&family=Raleway:wght@100;200;400&display=swap');
+/*
+ font-family: 'Alfa Slab One', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Marcellus', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+ */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/background1.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+
+#main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#left {
+  width: 50%;
+  height: 100%;
+}
+
+#right {
+  width: 50%;
+  height: 100%;
+}
+
+
+#logo {
+  width: 100%;
+  height: 20%;
+}
+
+
+#form {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+
+#socials {
+  width: 25%;
+  height: 10%;
+}
+
+#nav-container {
+  width: 100%;
+  height: 12%;
+  background-color: rgb(0, 137, 137);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+nav ul li a::after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  margin-top: 2px;
+  background-color: orange;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 2;
+} 
+
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+nav ul li a:hover{
+  color: black;
+  transition: 0.2s ease-in-out;
+  }
+
+nav ul li {
+  margin-top: 4%;
+}
+
+#list {
+  display: flex;
+  justify-content: space-evenly;
+}
+#logo {
+  width: 100%;
+  height: 13%;
+  margin-top: 2%;
+  z-index: 2;
+}
+
+#logo-img {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  margin-left: 60px;
+  z-index: 2;
+}
+
+#main-heading {
+  width: 80%;
+  height: 35%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  font-family: 'Marcellus', serif;
+  z-index: 1;
+  font-weight: 900;
+}
+
+#headings {
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  height: 10px;
+  z-index: 1;
+}
+
+#explore {
+  margin-top: 20px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 350;
+}
+
+#offer {
+  margin-top: 10px;
+  font-size: 50px;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 300;
+}
+
+#voucher {
+  margin-top: 7px;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: orange;
+  font-weight: 400;
+}
+
+#input-form {
+  display: inline-block;
+  align-items: center;
+  margin-top: -4%;
+}
+
+input {
+  height: 50%;
+  width: 70%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight:400;
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  height: 48%;
+  width: 15%;
+  background-color: orange;
+  border: none;
+  z-index: 2;
+}
+button i {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+#btn-arw:hover{
+  background-color:black;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button i:hover{
+  color: orange;
+  transition: 0.2s ease-in-out;
+}
+
+#desc {
+  margin-top: 3%;
+  font-size: 17px;
+  width: 90%;
+  font-family: 'Edu SA Beginner', cursive;
+  font-weight: 150;
+  z-index: 2;
+}
+
+#socials {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  margin-left: 7%;
+  margin-top: 4%;
+  color: orange;
+}
+
+#socials a i {
+  margin: 13px;
+  z-index: 2;
+} 
+
+
+ i:hover {
+  cursor: pointer;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+#socials a{
+  text-decoration: none;
+  z-index: 2;
+}
+
+#socials a i{
+  color: orange;
+}
+
+#socials a i:hover{
+  cursor: pointer;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* Mobile and Tablet styles */
+
+  #main-container {
+    flex-direction: column;
+  }
+
+  #left, #right {
+    width: 100%;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+  }
+  
+  #logo-img {
+    margin-top: 10%;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+  }
+
+  #main-heading {
+    margin-top: 10%;
+    font-size: 40px;
+    color: black;
+  }
+
+  #headings {
+    height: auto;
+    color: black;
+  }
+
+  #explore, #offer, #voucher {
+    font-size: 30px;
+  }
+
+  #voucher {
+    font-size: 15px;
+  }
+
+  #input-form {
+    margin-top: 10px;
+  }
+
+  input {
+    height: 35px;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  button {
+    height: 35px;
+    width: 50px;
+  }
+
+  #desc {
+    font-size: 16px;
+  }
+
+  #socials {
+    display: flex;
+    font-size: 30px;
+    margin-top: 180px;
+  }
+
+  #socials a i {
+    margin-left: 7px;
+  }
+
+  #nav-container {
+    height: 28%;
+  }
+
+  #list {
+    display: flex;
+    flex-direction: row;
+    margin-top: -176%;
+    font-weight: lighter;
+    
+  }
+
+  nav ul li {
+    margin-bottom: 3%;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+}
